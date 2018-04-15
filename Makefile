@@ -34,6 +34,9 @@ run:space
 
 SpaceInvaders.o: SpaceInvaders.cpp
 	g++ -std=c++11 -c "SpaceInvaders.cpp" -o SpaceInvaders.o 
+	
+enemy.o: enemy.cpp
+	g++ -std=c++11 -c "enemy.cpp" -o enemy.o 
 
 space: SpaceInvaders.o player.o lives.o invaders.o  enemyFly.o enemyBullets.o enemy.o bullets.o block.o
 	@echo "** Building the game Space Invagers"
